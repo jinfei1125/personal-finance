@@ -4,20 +4,28 @@ from pmaw import PushshiftAPI
 api = PushshiftAPI()
 
 '''
+Author: Jinfei Zhu
+
 Reference: 
 pmaw: https://medium.com/swlh/how-to-scrape-large-amounts-of-reddit-data-using-pushshift-1d33bde9286
 Datatime: https://www.w3schools.com/python/python_datetime.asp
 
+Sample arguments:
+subreddit = "personalfinance"
+limit = 100000
+before_date = '2021-02-01'
+after_date = '2021-01-01'
 '''
-
-# subreddit = "personalfinance"
-# limit = 100000
 
 def scrape(subreddit, limit, before_date, after_date):
     '''
     Input:
-        before_date: format '2021-02-01'
-        after_date: format '2020-12-01'
+    	subreddit(str): the redit handle
+    	limit(int): the limit of scraping result
+        before_date(str): format '2021-02-01'
+        after_date(str): format '2020-12-01'
+    Output: A csv file of scraped result
+    Return: Pandas dataframe of scraped result
     '''
     before = int(dt.datetime.strptime(before_date, '%Y-%m-%d').timestamp())
     after = int(dt.datetime.strptime(after_date, '%Y-%m-%d').timestamp())
@@ -29,7 +37,7 @@ def scrape(subreddit, limit, before_date, after_date):
 
     print(f'Retrieved {len(submissions)} submissions from Pushshift')
 
-    f = f'{subreddit}_{after_date}_{before_date}'
+    f = f'{subreddit}_{after_date}_{before_date}.csv'
     submissions_df = pd.DataFrame(submissions)
     submissions_df.to_csv(f, header=True, index=False)
 
