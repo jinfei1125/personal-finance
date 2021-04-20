@@ -1,5 +1,5 @@
-# personal-finance
-This repository contains data, python scripts and notebooks for Jinfei Zhu (jinfei@uchicago.edu) personal project: Content Analysis on Personal Finance Concerns for Reddit Data.
+# Top Personal Finance Concerns: A Content Analysis Based on Reddit Data
+This repository contains data, python scripts and notebooks for Jinfei Zhu's (jinfei@uchicago.edu) content analysis project studying personal finance concerns.
 
 Download Scraped Twitter Data from Google Drive (Because GitHub has 100M size limit):
 `https://drive.google.com/drive/folders/1KgXh2D3YdoO-CfWUviPcpfgESOI9hMNG?usp=sharing`
