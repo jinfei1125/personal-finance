@@ -5,3 +5,14 @@ notebook_env.db
 report/~$mputational Content Analysis on People's Personal Finance Concerns Based on Reddit Data.docx
 *.pptx
 report/~$tmp.xlsx
+data/personalfinance_2015-01-01_2016-01-01.csv
+data/personalfinance_2016-01-01_2017-01-01.csv
+data/personalfinance_2017-01-01_2018-01-01.csv
+data/personalfinance_2018-01-01_2019-01-01.csv
+data/personalfinance_2019-01-01_2020-01-01.csv
+data/personalfinance_2020-01-01_2020-07-01.csv
+data/personalfinance_2020-07-01_2021-01-01.csv
+*.pyc
+*.ipynb_checkpoints*
+*.gz
+*.sublime*
